@@ -1,4 +1,4 @@
-# SimpleFactor_Lisp
+# SimpleExponentiate_Lisp
 Trying out a new language for me.
 
     (defun ^ (base exponent &optional (total 1))
