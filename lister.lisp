@@ -24,3 +24,12 @@
 ;     The following restarts are available:
 ;     ABORT          :R1      Abort main loop
 ;Even though it's successful. Look into later.
+(defun lister2 (list)
+  (loop
+   (when (eq () (cadr (car list)))
+     (return "Done"))
+   (when (> 0 (cadr (car list)))
+     (return "Done"))
+   (print (car list))
+   (setf list (cdr list))))
+;^^^ New version that uses cadr, catches for nil, and has new lines at all.
